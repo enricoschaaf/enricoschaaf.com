@@ -3,7 +3,10 @@ import { ReactNode } from "react"
 
 const Title = ({ children }: { children: ReactNode }) => (
   <Head>
-    <title>{children} | Enrico Schaaf</title>
+    <title>
+      {children}
+      {children ? " | " : ""}Enrico Schaaf
+    </title>
   </Head>
 )
 
